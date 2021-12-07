@@ -1,0 +1,135 @@
+#1  Write a program to find all pairs in array of integer whose sum is equal to a given 
+number.
+print('Enter the number  of elements in array: ')
+k=int(input())
+print('Enter the required sum: ')
+sum=int(input())
+arr=[]
+print('Enter the elements to the list:')
+for i in range(0,k):
+    m=int(input())
+    arr.append(m)
+count=0
+for i in range(0, k):
+        for j in range(i + 1, k):
+            if arr[i] + arr[j] == sum:
+                count += 1
+print('the pairs: '+ str(count))
+
+#2 Find the sum of digits of a number using recursion.
+n = int(input("Please Enter any Number: "))
+s = 0
+
+while(n > 0):
+    r = n % 10
+    s = s + r
+    n = n //10
+print('The sum is: '+str(s))
+
+#3 Find the sum of squares of first N odd natural numbers.
+def squareSum(n):
+     
+    return int(n*(4*n*n-1)/3)
+print('Enter the limit: ')
+m=int(input())
+print(squareSum(m))
+
+#4 Write a program to display a solid and hollow rectangle
+rows = int(input("Please Enter the Total Number of Rows  : "))
+columns = int(input("Please Enter the Total Number of Columns  : "))
+print('\n')
+for i in range(rows):
+    for j in range(columns):
+        if(i == 0 or i == rows - 1 or j == 0 or j == columns - 1):
+            print('*', end = '  ')
+        else:
+            print(' ', end = '  ')
+    print()
+print('\t')
+print('\t')
+print('\n')
+print('\n')
+print('\n')
+for i in range(rows):
+    for j in range(columns):
+            print('*', end = '  ')
+    print()
+    
+    
+#5 Write a program to REVERSE the number
+print('Enter a number: ')
+n=input()
+print('The reverse of '+n+' is '+str(n[::-1]))
+
+
+#8 Write a program to display number of LOWERCASE, UPPERCASE, SPECIAL 
+SYMBOLS, SPACES and DIGITS in a STRING
+def count(string):
+    u = 0
+    l = 0
+    s = 0
+    n = 0
+    for i in range(len(string)):
+        if string[i].isupper():
+            u += 1
+        elif string[i].islower():
+            l += 1
+        elif string[i].isdigit():
+            n += 1
+        else:
+            s += 1
+    print('Upper case letters:', u)
+    print('Lower case letters:', l)
+    print('Number:', n)
+    print('Special characters:', s)
+print('enter the string: ')
+m=input()
+
+#10  Write a program to insert an element into existing array in a specified position
+list1 = [ 1, 2, 3, 4, 5, 6, 7 ] 
+print('enter the index position: ')
+i=int(input())
+print('enter the  element: ')
+j=int(input())
+list1.insert(i,j)
+print(list1)
+
+#11 Write a program to search an element in the existing array
+def Search(a,v):
+   for i in range(len(a)):
+      if(a[i]==v):
+         return i
+   return -1
+a=[12,2,23,4,5,46,17,82,9,110]
+v=9
+b=Search(a,v)
+if(b==-1):
+   print("Element not present")
+else:
+   print("Element present at index",b)
+   
+
+
+#13 Write a program to remove vowels from string
+def rem_vowel(string):
+    vowels = ['a','e','i','o','u']
+    result = [letter for letter in string if letter.lower() not in vowels]
+    result = ''.join(result)
+    print(result)
+  
+
+
+#15 Write a program for ZIP, ZAP and ZOOM game
+def func(n):
+    if n%3==0 and n%5==0:
+        print('ZOOM')
+    elif n%3==0:
+        print('ZIP')
+    elif n%5==0:
+        print('ZAP')
+    else:
+        print('INVALID')
+j=int(input('Enter the number: '))
+func(j)
+
+count(m)
