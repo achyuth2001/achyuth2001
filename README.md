@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @achyuth2001
-- Doing my 3rd year degree B.E Computer Science and Engineering
+- Doing my final year degree B.E Computer Science and Engineering
 - 👀 I’m interested in coding
 - 🌱 I’m currently learning python full stack as well as java full stack
 - 💞️ currently searching for job
